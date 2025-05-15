@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="js/index.js" defer></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <form
+      id="registrationForm"
+      class="bg-white p-8 rounded shadow-md w-full max-w-lg space-y-4"
+    >
+      <h1 class="text-2xl font-bold mb-4 text-center">Register Form</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          required
+          class="border p-2 rounded w-full"
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="lastName"
+          required
+          class="border p-2 rounded w-full"
+        />
+      </div>
+
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="email"
+        placeholder="Confirm Email"
+        name="confirmEmail"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="text"
+        placeholder="Address"
+        name="address"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="tel"
+        placeholder="Telephone"
+        name="telephone"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="text"
+        placeholder="Zip Code"
+        name="zipcode"
+        required
+        class="border p-2 rounded w-full"
+      />
+      <input
+        type="text"
+        placeholder="Country"
+        name="country"
+        required
+        class="border p-2 rounded w-full"
+      />
+
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
